@@ -1,0 +1,21 @@
+[
+  {
+    "label": "Debug on input",
+    "adapter": "JavaScript",
+    "type": "pwa-node",
+    "request": "launch",
+    "program": "$ZED_DIRNAME/solution.js",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "skipFiles": ["<node_internals>/**"]
+  },
+  {
+    "label": "Debug on example",
+    "adapter": "JavaScript",
+    "type": "pwa-node",
+    "request": "launch",
+    "program": "$ZED_DIRNAME/solution.js",
+    "args": ["example.txt"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "skipFiles": ["<node_internals>/**"]
+  }
+]

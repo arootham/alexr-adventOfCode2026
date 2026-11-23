@@ -1,0 +1,25 @@
+[
+  {
+    "label": "Run on input",
+    "command": "node \"$ZED_DIRNAME/solution.js\"",
+    "save": "all",
+    "reveal": "no_focus"
+  },
+  {
+    "label": "Run on example",
+    "command": "node \"$ZED_DIRNAME/solution.js\" example.txt",
+    "save": "all",
+    "reveal": "no_focus"
+  },
+  {
+    "label": "New day",
+    "command": "zed $(node tools/new-day.js)",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Ship day",
+    "command": "git add \"$ZED_DIRNAME\" && git commit -m \"Complete $(basename \"$ZED_DIRNAME\") solution\" && git push",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "save": "all"
+  }
+]
